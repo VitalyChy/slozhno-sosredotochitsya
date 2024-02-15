@@ -2,3 +2,17 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-font: 'IBM Plex mono';
+  --bg-color: #000028; /* Цвет фона Dark*/  
+  --nav-color: #FF0070; /* Цвет навигации кнопок */
+  --rec-color: #FF0070; /* Цвет эл. REC */
+  --title-color: #DB00FF; /* Цвет Заголовка */
+  --subtitle-color: #FF0070; /* Цвет Подзаголовков */
+  --subtitle-main-color: #000028; /* Цвет ПодПодзаголовков */
+  --accent-color: #FF0070; /* Цвет фона под текстом */  
+  --text-color: #F1B2CE; /* Цвет основного текста */
+  --bg-image: url(../images/cover-image-dark.png);   
+  --font-size: 18px;
+  --outline-button: #FF0070; /* Обводка кнопки */
+}
