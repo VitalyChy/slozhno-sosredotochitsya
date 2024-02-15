@@ -22,6 +22,9 @@
   --font-size: 18px;
   --outline-button: #353430; /* Обводка кнопки */
   --rec-color: #fff1f7;
+  --focus-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.40);
+  --border-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,5 +45,8 @@
     --font-size: 18px; 
     --outline-button: #353430; /* Обводка кнопки */ 
     --rec-color: #fff1f7;
+    --focus-color: #353430;
+    --hover-color: rgba(50, 49, 45, 0.40);
+    --border-color: #353430;
   }
 }

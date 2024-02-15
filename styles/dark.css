@@ -22,6 +22,9 @@
   --bg-image: url(../images/cover-image-dark.png);   
   --font-size: 18px;
   --outline-button: #FF0070; /* Обводка кнопки */
+  --focus-color: #f1b2ce;
+  --hover-color: rgba(255, 0, 112, 0.40);
+  --border-color: #ff0070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +46,9 @@
     --bg-image: url(../images/cover-image-dark.png);   
     --font-size: 18px;
     --outline-button: #FF0070; /* Обводка кнопки */
+    --focus-color: #f1b2ce;
+    --hover-color: rgba(255, 0, 112, 0.40);
+    --border-color: #ff0070;
   }
 }
   
