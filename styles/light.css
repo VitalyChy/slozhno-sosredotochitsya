@@ -9,8 +9,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-.page.theme_light {
-  --accent-font: 'IBM Plex mono';
+.page.theme_light {  
   --bg-color: #FFC2E6; /* Цвет фона Light*/  
   --nav-color: #353430; /* Цвет навигации кнопок */
   --title-color: #FFC2E6; /* Цвет Заголовка */
@@ -33,8 +32,7 @@
     --bg-image: url(../images/cover-image-light.png); 
   }
 
-  :root {
-    --accent-font: 'IBM Plex mono';
+  :root {    
     --bg-color: #FFC2E6; /* Цвет фона Light*/  
     --nav-color: #353430; /* Цвет навигации кнопок */
     --title-color: #FFC2E6; /* Цвет Заголовка */

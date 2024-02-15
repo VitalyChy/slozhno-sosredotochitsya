@@ -16,7 +16,7 @@
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon.png">
   </head>
-  <body class="page theme_dark">
+  <body class="page">
     <header class="header decorated-zone">
       <div class="header__record_element" aria-hidden="true">REC</div>
       <nav class="header__theme-menu">
@@ -47,17 +47,17 @@
       </nav>
       <h1 class="header__title">no focus</h1>
       <p class="header__paragraph title-decor">
-        Что делать, когда не можешь делать ничего <br/>Или почему нам так
+        Что делать, когда не можешь делать ничего <br>Или почему нам так
         сложно сконцентрироваться, особенно когда очень надо
       </p>
     </header>
     <main class="content">
       <section class="content_section section-one">
         <h2 class="content__title section__title-one">
-          Почему сосредоточиться так <br/>сложно
+          Почему сосредоточиться так <br>сложно
         </h2>
-        <div class="text_card text_card-column">
-          <h3 class="subtitle title-decor titles">Многозадачность</h3>
+        <article class="text_card text_card-column">
+          <h3 class="subtitle title-decor">Многозадачность</h3>
           <p class="section__text">
             Особенно сложно сосредоточиться, когда задач много и все они —
             важные. Где же легендарная многозадачность, когда она так нужна вам
@@ -74,8 +74,8 @@
             стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
             устаём.
           </p>
-        </div>
-        <div class="text_card text_card-column">
+        </article>
+        <article class="text_card text_card-column">
           <h3 class="subtitle title-decor">Дофамин</h3>
           <p class="section__text">
             С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
@@ -87,13 +87,13 @@
             удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
             тем больше удовольствия получаешь.
           </p>
-        </div>
+        </article>
       </section>
       <section class="content_section section-two">
         <h2 class="content__title section__title-two">
           Что снижает концентрацию внимания?
         </h2>
-        <div class="text_card text_card-column-two">
+        <article class="text_card text_card-column-two">
           <h3 class="subtitle title-decor">Многозадачность</h3>
           <p class="section__text">
             Как концентрация может снижаться из-за… концентрации? Любая
@@ -103,8 +103,8 @@
             — невозможно. Концентрация — мышца, и она может не выдержать, если
             не давать ей отдохнуть.
           </p>
-        </div>
-        <div class="text_card text_card-column-two">
+        </article>
+        <article class="text_card text_card-column-two">
           <h3 class="subtitle title-decor">Еда</h3>
           <p class="section__text">
             «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -114,8 +114,8 @@
             заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
             больше быстрых углеводов.
           </p>
-        </div>
-        <div class="text_card text_card-column-two">
+        </article>
+        <article class="text_card text_card-column-two">
           <h3 class="subtitle title-decor">Гаджеты</h3>
           <p class="section__text">
             Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -126,14 +126,14 @@
             что чем больше времени мы проводим в гаджетах, тем больше времени
             затем нужно, чтобы вернуться к работе.
           </p>
-        </div>
+        </article>
       </section>
       <section class="content_section section-three">
         <h2 class="content__title section__title-three">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="text_card text_card-column">
+        <article class="text_card text_card-column-recommendation">
           <h3 class="subtitle title-decor">
             5 простых (на самом деле не очень) советов
           </h3>
@@ -183,45 +183,43 @@
             секунд. А вот интересная книга способна затянуть и на несколько
             часов и круто тренирует направленное внимание.
           </p>
-        </div>
+        </article>
       </section>
       <section class="content_section section-four">
-        <div class="image_card">
-          <h3 class="subtitle subtitle_images title-decor section__title-four">
-            А можно в картинках?
-          </h3>
-          <picture class="content__picture">
-            <img
-              loading="lazy"
-              class="content__picture-image sunset"
-              src="./images/sunset.png"
-              alt="Закат в горах"
-            >
-            <img
-              loading="lazy"
-              class="content__picture-image ice-cream"
-              src="./images/ice-cream.png"
-              alt="Миска с вкусняшками"
-            >
-            <img
-              loading="lazy"
-              class="content__picture-image tape"
-              src="./images/tape.png"
-              alt="Касета с музыкой"
-            >
-            <img
-              loading="lazy"
-              class="content__picture-image books"
-              src="./images/books.png"
-              alt="Кружка на стопке книг"
-            >
-            <img
-              loading="lazy"
-              class="content__picture-image street"
-              src="./images/street.png"
-              alt="Улица в стиле Эдо"
-            >
-          </picture>
+        <h2 class="subtitle subtitle_images title-decor section__title-four">
+          А можно в картинках?
+        </h2>
+        <div class="content__picture">
+          <img
+            loading="lazy"
+            class="content__picture-image sunset"
+            src="./images/sunset.png"
+            alt="Закат в горах"
+          >
+          <img
+            loading="lazy"
+            class="content__picture-image ice-cream"
+            src="./images/ice-cream.png"
+            alt="Миска с вкусняшками"
+          >
+          <img
+            loading="lazy"
+            class="content__picture-image tape"
+            src="./images/tape.png"
+            alt="Касета с музыкой"
+          >
+          <img
+            loading="lazy"
+            class="content__picture-image books"
+            src="./images/books.png"
+            alt="Кружка на стопке книг"
+          >
+          <img
+            loading="lazy"
+            class="content__picture-image street"
+            src="./images/street.png"
+            alt="Улица в стиле Эдо"
+          >
         </div>
       </section>
     </main>

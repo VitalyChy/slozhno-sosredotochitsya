@@ -7,7 +7,8 @@
 /* 4. Медиазапросы */
 
 .page {
-  color: var(--text-color);
+  min-width: 375px;
+  color: var(--text-color, #F1B2CE);
   font-family: var(--accent-font), serif;
   font-size: var(--font-size);
   background-color: var(--bg-color);
@@ -93,12 +94,11 @@
 .header__theme-menu-button {
   min-width: 70px;
   min-height: 26px;
-  border: none;  
-  padding-inline: 13px;
+  border: none;   
   color: var(--nav-color);
-  font-weight: 400;
+  font-weight: normal;
   line-height: 18px;
-  text-align: center;
+  text-align: center;  
   background-color: transparent; 
   cursor: pointer; /* Добавил курсор при наведении на кнопку */  
 }
@@ -248,8 +248,8 @@
 }
 
 .footer_title {
-  color: var(--title-color);
-  font-family: var(--accent-font, sans-serif);
+  color: var(--title-color);  
+  font-family: var(--accent-font), sans-serif;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -271,7 +271,7 @@
 /* ########################################## */
 
 
-@media (768px <= width < 1024px) {
+@media (width >= 768px) {
 
   .decorated-zone::before {
     inset-block-start: 20px;
@@ -370,10 +370,9 @@
   .content__picture {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-column-gap: 20px;
-    grid-row-gap: 20px;   
-    max-height: 780px;
+    grid-row-gap: 20px;    
     margin-inline: 0;
     margin-block-start: 20px;    
   }
@@ -400,26 +399,7 @@
 }
 
 @media (width >= 1024px) {
-  .decorated-zone::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px; 
-  }
-
-  .decorated-zone::after {
-    inset-block-end: 20px;
-    inset-inline-start: 20px; 
-  }
-
-  .header__record_element {
-    inset-block-start: 20px;
-	  inset-inline-end: 48px;     
-  }
   
-  .header__record_element::after {
-    inset-block-start: 8px;
-	  inset-inline-end: -19px;
-  }
-
   .header__theme-menu {
     justify-content: center;
     align-self: start;
@@ -429,12 +409,8 @@
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
+    padding-inline-start: 10px;
   } 
-
-  .header__title {
-    padding-inline-start: 0;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
 
   .header__paragraph { 
     margin-inline-end: 20px;
@@ -442,114 +418,49 @@
     max-inline-size: 491px;
   }
 
-  .header__theme-menu {
-    justify-content: center;
-    align-self: start;
-    margin-block-start: 20px;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
-    justify-content: center;
-  } 
-
-  /* Блок Header Конец */
-
   .section-one {
     display: grid;
-    grid-template-columns: 1fr 2fr;    
+    grid-template-columns: auto 2fr;    
     gap: 20px;
     margin-block-start: 60px;               
   }
 
   .text_card-column {
-    grid-column-start: 2;
-    margin-inline-end: 20px;
+    grid-column-start: 2; 
+    padding-inline-start: 35px;   
   }
 
-  .content__title {      
-    margin-inline-start: 20px;
-    margin-block-start: 0;  
-  }
-
-  .subtitle {
-    margin-inline: 0;
-    margin-block-start: 0;     
+  .content__title {     
+    margin-block-start: 0; 
+    max-inline-size: 315px;
   }
 
   .section-two {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    grid-template-rows: repeat(3, auto);
     gap: 20px; 
     margin-inline: 20px; 
     margin-block-start: 80px;      
   }
 
-  .section__title-two {
-    margin-inline-start: 0;
+  .section__title-one {
+    margin-inline-end: 0;
   }
 
   .text_card-column-two {
-    grid-row-start: 2;    
+    grid-row-start: 2;
+    max-inline-size: 315px;    
   }
-
-  .section__text {
-    margin-inline: 0;
-  }
-
+  
   .section-three {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 2fr;
     gap: 20px;  
-    margin-block-start: 80px;
-  }
-
-  .subtitle_recommendation {
-    margin-inline: 0;
-    margin-block-start: 20px;
-  }
-
-  .section__title-three {
-    margin-inline-start: 20px;
-  }
-
-  .section-four {
-    margin-inline: 20px;    
-    margin-block-start: 80px;
-  }
-
-  .content__picture {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;       
-    margin-inline: 0;
-    margin-block-start: 20px;    
-  }
-
-  .content__picture-image {
-    object-fit: cover;
-		inline-size: 100%;
-		block-size: 100%;
-  }
-
-  .sunset { grid-area: 1 / 1 / 2 / 3; }
-  .ice-cream { grid-area: 1 / 3 / 3 / 4; }
-  .tape { grid-area: 2 / 1 / 4 / 2; }
-  .books { grid-area: 2 / 2 / 3 / 3; }
-  .street { grid-area: 3 / 2 / 4 / 4; }
-
-  /* Блок Main Конец */
-
-  .footer {
     margin-block-start: 60px;
   }
 
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
-  /* Блок Footer Конец */
-
 }
